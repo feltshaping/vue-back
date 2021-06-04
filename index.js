@@ -1,9 +1,5 @@
 const http = require('http');
-let users = [
-  { id: 10, name: 'sunxm' },
-  { id: 20, name: 'zhxw' },
-  { id: 3, name: 'hw' },
-];
+let users = [{ id: 0, name: 'finally' }];
 let server = http.createServer((req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   if (req.url === '/api/users') {
