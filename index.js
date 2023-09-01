@@ -5,7 +5,7 @@ let server = http.createServer((req, res) => {
   if (req.url === '/api/users') {
     res.end(JSON.stringify(users));
   } else {
-    res.end('Not found');
+    res.end('Not found!');
   }
 });
 server.listen(3000, () => {
